@@ -3,18 +3,18 @@
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
-module.exports = {
+export default {
   development: {
     client: "sqlite3",
     connection: {
-      filename: "./dev.sqlite3",
+      filename: "dedeDB",
     },
   },
 
   staging: {
     client: "postgresql",
     connection: {
-      database: "my_db",
+      database: "dedeDB",
       user: "username",
       password: "password",
     },
@@ -30,7 +30,7 @@ module.exports = {
   production: {
     client: "postgresql",
     connection: {
-      database: "my_db",
+      database: "dedeDB",
       user: "username",
       password: "password",
     },

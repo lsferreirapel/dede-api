@@ -1,5 +1,5 @@
 import dbKnex from "../data/db_config.js";
-import { returnObject } from "../utils";
+import { returnObject } from "../utils.js";
 
 export default {
   async index(req, res) {
