@@ -8,7 +8,7 @@ router.use(json());
 // define products register routes
 router
   .get("/products", ProductsController.index)
-  .post("/products/:id", ProductsController.create)
+  .post("/products", ProductsController.create)
   .get("/products/:field=:value", ProductsController.read)
   .put("/products/:id", ProductsController.update)
   .delete("/products/:id", ProductsController.delete);

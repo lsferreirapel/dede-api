@@ -130,9 +130,9 @@ export default {
         .json(returnObject("ID é obrigatorio", "BAD_INPUT"));
     // try create new user
     try {
-      await dbKnex("products").delete({
+      await dbKnex("products").where({
         id,
-      });
+      }).delete();
 
       return res
         .status(201)
